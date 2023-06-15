@@ -25,6 +25,7 @@ module.exports = {
       fontFamily: {
         clash: ['Clash Display', 'sans-serif'],
         satoshi: ['Satoshi', 'sans-serif'],
+        neue: ['Neue Power', 'sans-serif'],
         ade: ['Ade Display', 'serif'],
       },
 
