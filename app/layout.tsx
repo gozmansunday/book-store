@@ -67,7 +67,7 @@ const RootLayout = ({ children }: Props) => {
               animate="visible"
               exit="hidden"
               variants={menuList}
-              className="absolute inset-0 bg-neutral-200 flex flex-col items-end gap-6 font-ade text-4xl uppercase container mx-auto px-1 py-4 xs:gap-8 sm:gap-10 xs:text-5xl xs:py-8 sm:py-10 md:text-7xl md:gap-12"
+              className="absolute inset-0 bg-gradient-to-b from-white to-neutral-200 flex flex-col items-end gap-6 font-ade text-4xl uppercase container mx-auto px-1 py-4 xs:gap-8 sm:gap-10 xs:text-5xl xs:py-8 sm:py-10 md:text-7xl md:gap-12"
             >
               {links.map((link) => (
                 <Link onClick={closeMenu} key={link.href} className="transition duration-200 hover:text-main-dark hover:-translate-x-4" href={link.href}>
