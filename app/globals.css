@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Ade Display';
+  src:
+    url('../assets/fonts/Ade-Display.woff2') format('woff2 supports variations'),
+    url('../assets/fonts/Ade-Display.woff2') format('woff2-variations');
+}

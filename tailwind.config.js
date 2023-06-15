@@ -21,21 +21,20 @@ module.exports = {
       '2xl': '1800px',
     },
 
-    colors: {
-      'main': '#BCCF1E',
-      'dark': '#121210',
-      'mid': '#262624',
-      'light': '#CCCCCE',
-    },
-
     extend: {
       fontFamily: {
         clash: ['Clash Display', 'sans-serif'],
         satoshi: ['Satoshi', 'sans-serif'],
+        ade: ['Ade Display', 'serif'],
       },
 
-      backgroundImage: {
-        'noise': "url('/assets/noise.png')",
+      colors: {
+        'main-dark': '#4338CA',
+        'main-mid': '#818CF8',
+        'main-light': '#A5B4FC',
+        'dark': '#121210',
+        'mid': '#262624',
+        'light': '#CCCCCE',
       },
     },
   },
