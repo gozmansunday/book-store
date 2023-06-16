@@ -8,11 +8,11 @@ const Menu = () => {
   const [menuOpen, closeMenu] = useMenuStore((state) => [state.menuOpen, state.closeMenu]);
 
   const links = [
-    {href: "/crime", label: "Crime"},
-    {href: "/fantasy", label: "Fantasy"},
-    {href: "/romance", label: "Romance"},
-    {href: "/sci-fi", label: "Sci-Fi"},
-    {href: "/horror", label: "Horror"},
+    { href: "/crime", label: "Crime" },
+    { href: "/fantasy", label: "Fantasy" },
+    { href: "/romance", label: "Romance" },
+    { href: "/sci-fi", label: "Sci-Fi" },
+    { href: "/horror", label: "Horror" },
   ];
 
   // Framer Motion
@@ -23,7 +23,7 @@ const Menu = () => {
     },
     visible: {
       opacity: 1,
-      transition: { duration: 0.3 , delayChildren: 0.3, staggerChildren: 0.05 }
+      transition: { duration: 0.3, delayChildren: 0.3, staggerChildren: 0.05 }
     },
   };
 
@@ -43,15 +43,17 @@ const Menu = () => {
         animate="visible"
         exit="hidden"
         variants={menuList}
-        className="fixed inset-0 flex flex-col items-end gap-4 font-ade text-3xl uppercase bg-neutral-100 container mx-auto px-1 py-16 xs:gap-6 sm:gap-8 xs:text-5xl xs:py-20 md:py-24 md:text-6xl md:gap-10"
+        className="fixed inset-0 bg-neutral-100"
       >
-        {links.map((link) => (
-          <Link onClick={closeMenu} key={link.href} className="transition duration-200 hover:text-main-dark hover:-translate-x-4" href={link.href}>
-            <motion.div variants={itemList}>
-              {link.label}
-            </motion.div>
-          </Link>
-        ))}
+        <div className="flex flex-col items-end gap-4 font-ade text-3xl uppercase container mx-auto px-1 py-16 xs:gap-6 sm:gap-8 xs:text-5xl xs:py-20 md:py-24 md:text-6xl md:gap-10">
+          {links.map((link) => (
+            <Link onClick={closeMenu} key={link.href} className="transition duration-200 hover:text-primary hover:-translate-x-4" href={link.href}>
+              <motion.div variants={itemList}>
+                {link.label}
+              </motion.div>
+            </Link>
+          ))}
+        </div>
       </motion.div>}
     </AnimatePresence>
   );
