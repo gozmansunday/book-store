@@ -19,7 +19,7 @@ const Hero = () => {
           <div className='grid gap-14 lg:grid-cols-2 lg:gap-20'>
             {/* Book 1 Image and Info */}
             <section className='flex flex-col gap-8 md:flex-row'>
-              <Image className='w-full mx-auto md:w-52 shadow-lg shadow-neutral-700/50' src={roseBurma} alt="rose-and-the-burma-sky" />
+              <Image className='w-full mx-auto md:w-52 shadow-md shadow-neutral-700/40' src={roseBurma} alt="Rose and the Burma Sky" />
 
               <div className='space-y-3'>
                 <section className=' font-semibold'>
@@ -44,7 +44,7 @@ const Hero = () => {
 
             {/* Book 2 Image and Info */}
             <section className='flex flex-col gap-8 md:flex-row'>
-              <Image className='w-full mx-auto md:w-52 shadow-lg shadow-neutral-700/50' src={foolOfDeath} alt="you-made-a-fool-of-death-with-your-beauty" />
+              <Image className='w-full mx-auto md:w-52 shadow-md shadow-neutral-700/50' src={foolOfDeath} alt="You Made a Fool of Death with Your Beauty" />
 
               <div className='space-y-3'>
                 <section className=' font-semibold'>
