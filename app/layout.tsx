@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import Header from '../components/Header';
 import './globals.css';
-import Menu from '@/components/navigation/NavMenu';
+import NavMenu from '@/components/navigation/NavMenu';
 
 export const metadata = {
   title: 'Book Store',
@@ -23,7 +23,7 @@ const RootLayout = ({ children }: Props) => {
         <Header />
         <div className="relative">
           {children}
-          <Menu />
+          <NavMenu />
         </div>
       </body>
     </html>
