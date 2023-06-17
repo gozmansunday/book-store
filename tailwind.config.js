@@ -30,7 +30,7 @@ module.exports = {
       },
 
       colors: {
-        'primary': '#4338CA',
+        'primary': '#008753',
       },
 
       keyframes: {
