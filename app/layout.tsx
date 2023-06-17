@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import Header from '../components/Header';
 import './globals.css';
-import Menu from '@/app/Menu';
+import Menu from '@/components/navigation/NavMenu';
 
 export const metadata = {
   title: 'Book Store',

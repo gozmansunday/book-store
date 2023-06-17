@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="pt-10">
       <div className="container mx-auto px-1 space-y-8">
         <div className="flex justify-center items-center font-ade uppercase text-center max-w-6xl mx-auto text-3xl xs:text-4xl md:text-6xl lg:text-7x">
-          Discover The World&apos;s Finest Fiction Books
+          The best of Nigerian literature, all in one place.
         </div>
 
         {/* New Releases */}

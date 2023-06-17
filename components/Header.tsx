@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Hamburger from "./Hamburger";
+import Hamburger from "./navigation/Hamburger";
 
 const Header = () => {
   return (

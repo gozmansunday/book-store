@@ -2,10 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import Hero from "../components/homepage/Hero";
-import Marquee from "@/components/marquee/Marquee";
-
-const Home = () => {
+const NonFictionPage = () => {
   return (
     <AnimatePresence>
       <motion.main
@@ -14,12 +11,10 @@ const Home = () => {
         transition={{ duration: 0.3 }}
         className="space-y-16 xs:space-y-20 md:space-y-24"
       >
-        <Hero />
-        <Marquee />
-        <div className="py-6" />
+        
       </motion.main>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default Home;
+export default NonFictionPage;
