@@ -3,7 +3,7 @@ import Hamburger from "./navigation/Hamburger";
 
 const Header = () => {
   return (
-    <header className={`sticky top-0 flex flex-col font-neue bg-neutral-100 z-10 shadow-md`}>
+    <header className={`sticky top-0 flex flex-col font-neue bg-neutral-100 z-10 shadow`}>
       <div className="container mx-auto px-1 py-2 flex items-center justify-between md:py-3">
         {/* Logo */}
         <Link href="/" className="font-semibold text-xl sm:text-2xl md:text-3xl">bkstr</Link>
