@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 
 import Hero from "../components/homepage/Hero";
-import Marquee from "@/components/marquee/Marquee";
+import Categories from "@/components/homepage/Categories";
 
 const Home = () => {
   return (
@@ -15,8 +15,7 @@ const Home = () => {
         className="space-y-16 xs:space-y-20 md:space-y-24"
       >
         <Hero />
-        <Marquee />
-        <div className="py-6" />
+        <Categories />
       </motion.main>
     </AnimatePresence>
   );
