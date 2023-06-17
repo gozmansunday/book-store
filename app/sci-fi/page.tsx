@@ -1,6 +1,6 @@
 const SciFiPage = () => {
   return (
-    <main>
+    <main className="py-6">
       
     </main>
   );

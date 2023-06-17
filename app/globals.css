@@ -8,3 +8,10 @@
     url('../assets/fonts/Ade-Display.woff2') format('woff2 supports variations'),
     url('../assets/fonts/Ade-Display.woff2') format('woff2-variations');
 }
+
+@font-face {
+  font-family: 'Neue Power';
+  src:
+    url('../assets/fonts/NeuePower.woff2') format('woff2 supports variations'),
+    url('../assets/fonts/NeuePower.woff2') format('woff2-variations');
+}

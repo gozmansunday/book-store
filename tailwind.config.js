@@ -25,16 +25,22 @@ module.exports = {
       fontFamily: {
         clash: ['Clash Display', 'sans-serif'],
         satoshi: ['Satoshi', 'sans-serif'],
+        neue: ['Neue Power', 'sans-serif'],
         ade: ['Ade Display', 'serif'],
       },
 
       colors: {
-        'main-dark': '#4338CA',
-        'main-mid': '#818CF8',
-        'main-light': '#A5B4FC',
-        'dark': '#121210',
-        'mid': '#262624',
-        'light': '#CCCCCE',
+        'primary': '#4338CA',
+      },
+
+      keyframes: {
+        marquee: {
+          '100%': { transform: 'translate(-100%, 0)' }
+        },
+      },
+
+      animation: {
+        marquee: 'marquee 5s linear infinite',
       },
     },
   },

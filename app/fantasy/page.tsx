@@ -1,6 +1,6 @@
 const FantasyPage = () => {
   return (
-    <main>
+    <main className="py-6">
       
     </main>
   );
