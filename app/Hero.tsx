@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { BsChevronRight } from 'react-icons/bs';
 
-import arrowOfGod from '@/assets/images/arrow-of-god.jpg';
-import americanah from '@/assets/images/americanah.jpg';
+import arrowOfGod from '@/public/assets/images/arrow-of-god.jpg';
+import americanah from '@/public/assets/images/americanah.jpg';
 
 const Hero = () => {
   return (
