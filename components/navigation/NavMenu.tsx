@@ -4,15 +4,12 @@ import { useMenuStore } from "@/hooks/useStore";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
-const Menu = () => {
+const NavMenu = () => {
   const [menuOpen, closeMenu] = useMenuStore((state) => [state.menuOpen, state.closeMenu]);
 
   const links = [
-    { href: "/crime", label: "Crime" },
-    { href: "/fantasy", label: "Fantasy" },
-    { href: "/romance", label: "Romance" },
-    { href: "/sci-fi", label: "Sci-Fi" },
-    { href: "/horror", label: "Horror" },
+    { href: "/fiction", label: "Fiction" },
+    { href: "/non-fiction", label: "Non-Fiction" },
   ];
 
   // Framer Motion
@@ -45,7 +42,7 @@ const Menu = () => {
         variants={menuList}
         className="fixed inset-0 bg-neutral-100"
       >
-        <div className="flex flex-col items-end gap-4 font-ade text-3xl uppercase container mx-auto px-1 py-16 xs:gap-6 sm:gap-8 xs:text-5xl xs:py-20 md:py-24 md:text-6xl md:gap-10">
+        <div className="flex flex-col items-end gap-4 font-ade text-2xl uppercase container mx-auto px-1 py-20 xs:gap-6 sm:gap-6 xs:text-4xl xs:py-24 md:py-32 md:text-6xl md:gap-8">
           {links.map((link) => (
             <Link onClick={closeMenu} key={link.href} className="transition duration-200 hover:text-primary hover:-translate-x-4" href={link.href}>
               <motion.div variants={itemList}>
@@ -59,4 +56,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default NavMenu;
