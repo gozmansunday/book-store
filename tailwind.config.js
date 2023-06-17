@@ -30,12 +30,17 @@ module.exports = {
       },
 
       colors: {
-        'main-dark': '#4338CA',
-        'main-mid': '#818CF8',
-        'main-light': '#A5B4FC',
-        'dark': '#121210',
-        'mid': '#262624',
-        'light': '#CCCCCE',
+        'primary': '#4338CA',
+      },
+
+      keyframes: {
+        marquee: {
+          '100%': { transform: 'translate(-100%, 0)' }
+        },
+      },
+
+      animation: {
+        marquee: 'marquee 5s linear infinite',
       },
     },
   },
