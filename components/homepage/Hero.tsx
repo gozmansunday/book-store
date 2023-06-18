@@ -7,7 +7,7 @@ import roseBurma from '@/public/assets/images/rose-burma.jpg';
 const Hero = () => {
   return (
     <section className="pt-10">
-      <div className="container mx-auto px-1 space-y-8">
+      <div className="max-w-[96rem] mx-auto px-2 space-y-8">
         <div className="flex justify-center items-center font-ade uppercase text-center max-w-6xl mx-auto text-3xl xs:text-4xl md:text-6xl lg:text-7x">
           The best of Nigerian literature, all in one place.
         </div>

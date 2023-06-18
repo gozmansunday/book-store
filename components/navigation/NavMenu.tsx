@@ -42,7 +42,7 @@ const NavMenu = () => {
         variants={menuList}
         className="fixed inset-0 bg-neutral-100"
       >
-        <div className="flex flex-col items-end gap-4 font-ade text-2xl uppercase container mx-auto px-1 py-20 xs:gap-6 sm:gap-6 xs:text-4xl xs:py-24 md:py-32 md:text-6xl md:gap-8">
+        <div className="flex flex-col items-end gap-4 font-ade text-2xl uppercase max-w-[96rem] mx-auto px-2 py-20 xs:gap-6 sm:gap-6 xs:text-4xl xs:py-24 md:py-32 md:text-6xl md:gap-8">
           {links.map((link) => (
             <Link onClick={closeMenu} key={link.href} className="transition duration-200 hover:text-primary hover:-translate-x-4" href={link.href}>
               <motion.div variants={itemList}>
