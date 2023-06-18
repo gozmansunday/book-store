@@ -42,6 +42,12 @@ module.exports = {
       animation: {
         marquee: 'marquee 5s linear infinite',
       },
+
+      backgroundImage: {
+        'tfa': "url(/assets/images/things-fall-apart.jpg)",
+        'americanah': "url(/assets/images/americanah.jpg)",
+        'akata': "url(/assets/images/akata-witch.jpg)",
+      }
     },
   },
 
