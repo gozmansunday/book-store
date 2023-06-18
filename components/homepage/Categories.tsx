@@ -1,7 +1,8 @@
+import Image from "next/image";
+
 import Marquee from "../marquee/Marquee";
 import fiction from '@/public/assets/images/fiction.jpg';
 import nonFiction from '@/public/assets/images/non-fiction.jpg';
-import Image from "next/image";
 
 const Categories = () => {
   return (
@@ -9,7 +10,7 @@ const Categories = () => {
       <Marquee />
 
       {/* Categories Section */}
-      <div className="container mx-auto divide-y-2 divide-neutral-900">
+      <div className="max-w-[96rem] mx-auto px-2 divide-y-2 divide-neutral-900">
         {/* Fiction */}
         <div className="space-y-2 py-6 xs:py-8 xs:space-y-4 md:py-10 lg:py-12 md:space-y-6">
           <h3 className="font-ade uppercase text-2xl xs:text-3xl md:text-4xl lg:text-5xl">Fiction</h3>

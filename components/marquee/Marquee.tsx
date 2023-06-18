@@ -14,7 +14,7 @@ const Marquee = () => {
         <MarqueeContent />
       </section>
 
-      <div className="absolute inset-0 container mx-auto border-y-4 border-neutral-900" />
+      <div className="absolute inset-y-0 inset-x-2  max-w-[96rem] mx-auto border-y-4 border-neutral-900" />
     </div>
   );
 };
