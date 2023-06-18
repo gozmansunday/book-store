@@ -6,7 +6,7 @@ import roseBurma from '@/public/assets/images/rose-burma.jpg';
 
 const Hero = () => {
   return (
-    <section className="pt-10">
+    <section className="py-10">
       <div className="max-w-[96rem] mx-auto px-2 space-y-8">
         <div className="flex justify-center items-center font-ade uppercase text-center max-w-6xl mx-auto text-3xl xs:text-4xl md:text-6xl lg:text-7x">
           The best of Nigerian literature, all in one place.
@@ -19,7 +19,7 @@ const Hero = () => {
           <div className='grid gap-14 lg:grid-cols-2 lg:gap-20'>
             {/* Book 1 Image and Info */}
             <section className='flex flex-col gap-8 md:flex-row'>
-              <Image className='w-full mx-auto md:w-52 shadow-md shadow-neutral-700/40' src={roseBurma} alt="Rose and the Burma Sky" />
+              <Image className='w-full mx-auto md:w-52 shadow-md' src={roseBurma} alt="Rose and the Burma Sky" />
 
               <div className='space-y-3'>
                 <section className=' font-semibold'>
@@ -44,7 +44,7 @@ const Hero = () => {
 
             {/* Book 2 Image and Info */}
             <section className='flex flex-col gap-8 md:flex-row'>
-              <Image className='w-full mx-auto md:w-52 shadow-md shadow-neutral-700/50' src={foolOfDeath} alt="You Made a Fool of Death with Your Beauty" />
+              <Image className='w-full mx-auto md:w-52 shadow-md' src={foolOfDeath} alt="You Made a Fool of Death with Your Beauty" />
 
               <div className='space-y-3'>
                 <section className=' font-semibold'>
