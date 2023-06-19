@@ -1,5 +1,8 @@
 import foolOfDeath from '@/public/assets/images/fool-of-death.jpg';
 import roseBurma from '@/public/assets/images/rose-burma.jpg';
+import fiction from '@/public/assets/images/fiction.jpg';
+import nonFiction from '@/public/assets/images/non-fiction.jpg';
+import bestsellers from '@/public/assets/images/bestsellers.jpg';
 
 export const heroInfo = [
   {
@@ -19,32 +22,20 @@ export const heroInfo = [
 export const categoriesData = [
   {
     name: 'fiction',
-    image: 'fiction.jpg',
+    image: fiction,
     content: `Discover the vibrant world of Nigerian fiction on our website. Immerse yourself in captivating narratives that transport you to different times, places, and perspectives. From acclaimed literary masterpieces to contemporary page-turners, our collection showcases the rich tapestry of storytelling from Nigeria’s finest authors. Explore a range of genres, including historical fiction, romance, crime, fantasy, and more. Whether you’re a seasoned reader or new to Nigerian literature, our fiction category offers a treasure trove of engaging narratives that will ignite your imagination and leave you longing for more.`,
     pageLink: '/fiction'
   },
   {
     name: 'non-fiction',
-    image: 'non-fiction.jpg',
+    image: nonFiction,
     content: `Explore the compelling realm of Nigerian non-fiction on our platform. Delve into thought-provoking works that offer insights into Nigeria’s history, culture, society, and beyond. From memoirs and biographies to scholarly research and investigative journalism, our non-fiction category provides a diverse array of books that educate, inform, and inspire. Gain a deeper understanding of Nigeria’s past, present, and future through the lenses of renowned authors and experts. Whether you’re seeking personal growth, academic enrichment, or a glimpse into untold stories, our non-fiction collection offers a gateway to knowledge and enlightenment.`,
     pageLink: '/non-fiction'
   },
-];
-
-export const bestsellersData = [
   {
-    name: 'things fall apart',
-    image: 'things-fall-apart.jpg',
-    content: `Things Fall Apart is the first of three novels in Chinua Achebe’s critically acclaimed African Trilogy. It is a classic narrative about Africa’s cataclysmic encounter with Europe as it establishes a colonial presence on the continent. Told through the fictional experiences of Okonkwo, a wealthy and fearless Igbo warrior of Umuofia in the late 1800s, Things Fall Apart explores one man’s futile resistance to the devaluing of his Igbo traditions by British political andreligious forces and his despair as his community capitulates to the powerful new order.`
-  },
-  {
-    name: 'americanah',
-    image: 'americanah.jpg',
-    content: `Ifemelu and Obinze are young and in love when they depart military-ruled Nigeria for the West. Beautiful, self-assured Ifemelu heads for America, where despite her academic success, she is forced to grapple with what it means to be black for the first time. Quiet, thoughtful Obinze had hoped to join her, but with post-9/11 America closed to him, he instead plunges into a dangerous, undocumented life in London. Fifteen years later, they reunite in a newly democratic Nigeria, and reignite their passion—for each other and for their homeland.`
-  },
-  {
-    name: 'akata witch',
-    image: 'akata-witch.jpg',
-    content: `Twelve-year-old Sunny lives in Nigeria, but she was born American. Her features are African, but she’s albino. She’s a terrific athlete, but can’t go out into the sun to play soccer. There seems to be no place where she fits in. And then she discovers something amazing—she is a &quot;free agent&quot; with latent magical power. Soon she’s part of a quartet of magic students, studying the visible and invisible, learning to change reality. But will it be enough to help them when they are asked to catch a career criminal who knows magic too?`
+    name: 'bestsellers',
+    image: bestsellers,
+    content: `Indulge in the crème de la crème of Nigerian literature with our bestsellers category. This curated collection features the most sought-after and highly acclaimed books that have captivated readers and garnered widespread acclaim. Discover literary gems that have garnered critical acclaim, won prestigious awards, and resonated with readers worldwide. Our bestsellers category encompasses both fiction and non-fiction titles, ensuring a diverse range of captivating reads. Stay up-to-date with the latest literary sensations, cultural phenomena, and literary milestones from Nigeria's literary landscape. Uncover literary masterpieces and bestselling authors that are making waves in the literary world.`,
+    pageLink: '/bestsellers'
   },
 ];

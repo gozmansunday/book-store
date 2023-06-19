@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Hero from "../components/homepage/Hero";
 import Categories from "@/components/homepage/Categories";
-import Bestsellers from "@/components/homepage/Bestsellers";
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       >
         <Hero />
         <Categories />
-        <Bestsellers />
       </motion.main>
     </AnimatePresence>
   );
