@@ -3,6 +3,8 @@ import { BsChevronRight } from "react-icons/bs";
 
 import { categoriesData } from "@/public/assets/data/data";
 import Marquee from "../marquee/Marquee";
+import fiction from '@/public/assets/images/fiction.jpg';
+import Image from "next/image";
 
 const Categories = () => {
   return (
@@ -16,9 +18,9 @@ const Categories = () => {
             <h3 className="font-ade uppercase text-2xl xs:text-3xl md:text-4xl lg:text-5xl">{category.name}</h3>
 
             <section className="font-clash grid justify-between gap-4 md:grid-cols-2 md:gap-8 lg:gap-12">
-              <div className={`h-36 sm:h-48 shadow-md bg-[url(/assets/images/${category.image})] bg-bottom bg-cover md:bg-cover md:h-full`}></div>
+              <Image className='w-full h-full shadow-md object-cover object-center' src={category.image} alt="ficiton" />
 
-              <div className="flex flex-col gap-4 md:gap-8">
+              <div className="flex flex-col justify-between gap-4 md:gap-8">
                 <p className="text-sm sm:text-base md:text-md lg:text-lg">
                   {category.content}
                 </p>
@@ -39,8 +41,3 @@ const Categories = () => {
 };
 
 export default Categories;
-
-// -------------------------------------------------
-// IGNORE
-{/* bg-[url(/assets/images/fiction.jpg)] */}
-{/* bg-[url(/assets/images/non-fiction.jpg)] */}

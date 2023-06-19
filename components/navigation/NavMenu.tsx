@@ -10,6 +10,7 @@ const NavMenu = () => {
   const links = [
     { href: "/fiction", label: "Fiction" },
     { href: "/non-fiction", label: "Non-Fiction" },
+    { href: "/bestsellers", label: "Bestsellers" },
   ];
 
   // Framer Motion
