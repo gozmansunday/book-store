@@ -38,3 +38,9 @@ const Bestsellers = () => {
 };
 
 export default Bestsellers;
+
+// -------------------------------------------------
+// IGNORE
+{/* bg-[url(/assets/images/things-fall-apart.jpg)] */}
+{/* bg-[url(/assets/images/americanah.jpg)] */}
+{/* bg-[url(/assets/images/akata-witch.jpg)] */}

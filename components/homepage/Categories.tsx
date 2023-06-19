@@ -39,3 +39,8 @@ const Categories = () => {
 };
 
 export default Categories;
+
+// -------------------------------------------------
+// IGNORE
+{/* bg-[url(/assets/images/fiction.jpg)] */}
+{/* bg-[url(/assets/images/non-fiction.jpg)] */}
