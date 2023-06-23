@@ -24,11 +24,11 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        clash: ['Clash Display', 'sans-serif'],
-        mona: ['Mona Sans', 'sans-serif'],
-        hubot: ['Hubot Sans', 'sans-serif'],
-        neue: ['Neue Power', 'sans-serif'],
-        ade: ['Ade Display', 'serif'],
+        ade: ['var(--font-ade)'],
+        clash: ['var(--font-clash)'],
+        hubot: ['var(--font-hubot)'],
+        mona: ['var(--font-mona)'],
+        neue: ['var(--font-neue)'],
       },
 
       colors: {
