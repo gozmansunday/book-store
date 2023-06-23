@@ -1,16 +1,24 @@
 import Link from "next/link";
-import Hamburger from "./navigation/Hamburger";
+import { HiOutlineShoppingBag } from "react-icons/hi";
+import { GiBookmark } from "react-icons/gi";
+
+import Hamburger from "@/components/navigation/Hamburger";
 
 const Header = () => {
   return (
-    <header className={`sticky top-0 font-neue bg-neutral-100 z-10 shadow`}>
-      <div className="max-w-[96rem] mx-auto px-2 py-2 flex items-center justify-between md:py-3">
+    <header className={`sticky top-0 font-neue z-10 shadow border border-b-neutral-300 backdrop-blur bg-neutral-200/50`}>
+      <div className="max-w-[84rem] mx-auto flex items-center justify-between px-2 py-1 xs:px-3 md:px-6 md:py-2">
         {/* Logo */}
-        <Link href="/" className="font-semibold text-xl sm:text-2xl md:text-3xl">bkstr</Link>
+        <div className="flex items-center gap-1">
+          <GiBookmark className="xs:text-xl md:text-2xl" />
+          <Link href="/" className="font-bold xs:text-xl md:text-2xl">bkstr</Link>
+        </div>
 
-        <div className="flex items-center gap-6 font-semibold md:gap-8">
-          <Link href="/cart" className="text-xs transition duration-200 hover:text-primary md:text-sm">CART</Link>
-          <Hamburger color="bg-neutral-900" />
+        <div className="flex items-center gap-6 md:gap-8">
+          <Link href="/cart" className="text-xs transition duration-200 hover:text-primary md:text-sm">
+            <HiOutlineShoppingBag className="text-xl md:text-2xl" />
+          </Link>
+          <Hamburger color="bg-neutral-800" />
         </div>
       </div>
     </header>

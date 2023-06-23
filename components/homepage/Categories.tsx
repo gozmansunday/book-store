@@ -1,40 +1,41 @@
 import Link from "next/link";
-import { BsChevronRight } from "react-icons/bs";
-
-import { categoriesData } from "@/public/assets/data/data";
-import Marquee from "../marquee/Marquee";
-import fiction from '@/public/assets/images/fiction.jpg';
 import Image from "next/image";
+
+import { categoriesData } from "@/public/data/data";
 
 const Categories = () => {
   return (
-    <section>
-      <Marquee content="categories" />
+    <section className="py-6">
+      <div className="max-w-[84rem] space-y-8 mx-auto px-2 xs:px-3 md:px-6 lg:px-3">
+        <h2 className="font-ade uppercase text-xl md:text-3xl">
+          categories
+        </h2>
 
-      <div className="max-w-[96rem] mx-auto px-2 divide-y-2 divide-neutral-900">
+        <div className="bg-neutral-200/50 border border-neutral-300 divide-y-2 divide-neutral-300 backdrop-blur px-8 rounded-2xl shadow md:px-12">
 
-        {categoriesData.map((category) => (
-          <div key={category.name} className="space-y-2 py-6 xs:py-8 xs:space-y-4 md:py-10 lg:py-12 md:space-y-6">
-            <h3 className="font-ade uppercase text-2xl xs:text-3xl md:text-4xl lg:text-5xl">{category.name}</h3>
+          {categoriesData.map((category) => (
+            <div key={category.name} className="space-y-6 pt-6 pb-8 md:pt-8 md:pb-12">
+              <h3 className="text-base text-neutral-600 capitalize md:text-lg lg:text-xl">{category.name}</h3>
 
-            <section className="font-clash grid justify-between gap-4 md:grid-cols-2 md:gap-8 lg:gap-12">
-              <Image className='w-full h-full shadow-md object-cover object-center' src={category.image} alt="ficiton" />
+              <section className="grid gap-4 md:grid-cols-2 md:gap-8 lg:gap-12 lg:grid-cols-[4fr_5fr]">
+                <Image className="w-full h-full shadow object-cover object-center rounded-lg" src={category.image} alt={category.name} />
 
-              <div className="flex flex-col justify-between gap-4 md:gap-8">
-                <p className="text-sm sm:text-base md:text-md lg:text-lg">
-                  {category.content}
-                </p>
+                <div className="flex flex-col justify-between gap-4 md:gap-6">
+                  <p className="text-neutral-600 text-xs line-clamp-[7] sm:text-sm lg:line-clamp-none">
+                    {category.content}
+                  </p>
 
-                <Link href={category.pageLink} className="flex">
-                  <button className='flex items-center gap-2 border border-neutral-900 py-2 px-8 transition duration-200 hover:border-primary hover:bg-primary hover:text-neutral-100 xs:py-3 xs:px-12'>
-                    View Category <BsChevronRight className='text-sm' />
-                  </button>
-                </Link>
-              </div>
-            </section>
-          </div>
-        ))}
-        
+                  <Link href={category.pageLink}>
+                    <button className="flex items-center border border-neutral-400 bg-neutral-200 text-xs gap-2 py-2 px-6 rounded-lg shadow transition duration-200 hover:bg-neutral-300 sm:text-sm">
+                      View Category
+                    </button>
+                  </Link>
+                </div>
+              </section>
+            </div>
+          ))}
+          
+        </div>
       </div>
     </section>
   );

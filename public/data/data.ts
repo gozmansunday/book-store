@@ -1,8 +1,8 @@
-import foolOfDeath from '@/public/assets/images/fool-of-death.jpg';
-import roseBurma from '@/public/assets/images/rose-burma.jpg';
-import fiction from '@/public/assets/images/fiction.jpg';
-import nonFiction from '@/public/assets/images/non-fiction.jpg';
-import bestsellers from '@/public/assets/images/bestsellers.jpg';
+import foolOfDeath from '@/public/images/fool-of-death.jpg';
+import roseBurma from '@/public/images/rose-burma.jpg';
+import fiction from '@/public/images/fiction.jpg';
+import nonFiction from '@/public/images/non-fiction.jpg';
+import bestsellers from '@/public/images/bestsellers.jpg';
 
 export const heroInfo = [
   {

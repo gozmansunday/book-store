@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './overhaul/**/*.{js,ts,jsx,tsx,mdx}',
   ],
 
   future: {
@@ -24,7 +25,8 @@ module.exports = {
     extend: {
       fontFamily: {
         clash: ['Clash Display', 'sans-serif'],
-        satoshi: ['Satoshi', 'sans-serif'],
+        mona: ['Mona Sans', 'sans-serif'],
+        hubot: ['Hubot Sans', 'sans-serif'],
         neue: ['Neue Power', 'sans-serif'],
         ade: ['Ade Display', 'serif'],
       },

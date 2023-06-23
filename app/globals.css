@@ -5,13 +5,27 @@
 @font-face {
   font-family: 'Ade Display';
   src:
-    url('../public/assets/fonts/Ade-Display.woff2') format('woff2 supports variations'),
-    url('../public/assets/fonts/Ade-Display.woff2') format('woff2-variations');
+    url('../public/fonts/Ade-Display.woff2') format('woff2 supports variations'),
+    url('../public/fonts/Ade-Display.woff2') format('woff2-variations');
 }
 
 @font-face {
   font-family: 'Neue Power';
   src:
-    url('../public/assets/fonts/NeuePower.woff2') format('woff2 supports variations'),
-    url('../public/assets/fonts/NeuePower.woff2') format('woff2-variations');
+    url('../public/fonts/NeuePower.woff2') format('woff2 supports variations'),
+    url('../public/fonts/NeuePower.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Mono Sans';
+  src:
+    url('../public/fonts/MonaSans.woff2') format('woff2 supports variations'),
+    url('../public/fonts/MonaSans.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Hubot Sans';
+  src:
+    url('../public/fonts/HubotSans.woff2') format('woff2 supports variations'),
+    url('../public/fonts/HubotSans.woff2') format('woff2-variations');
 }
