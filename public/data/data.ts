@@ -1,8 +1,10 @@
-import foolOfDeath from '@/public/images/fool-of-death.jpg';
-import roseBurma from '@/public/images/rose-burma.jpg';
-import fiction from '@/public/images/fiction.jpg';
-import nonFiction from '@/public/images/non-fiction.jpg';
-import bestsellers from '@/public/images/bestsellers.jpg';
+import foolOfDeath from '@/public/images/books/fool-of-death.jpg';
+import roseBurma from '@/public/images/books/rose-burma.jpg';
+import fiction from '@/public/images/banners/fiction.jpg';
+import nonFiction from '@/public/images/banners/non-fiction.jpg';
+import bestsellers from '@/public/images/banners/bestsellers.jpg';
+import chimamanda from '@/public/images/authors/chimamanda.jpg';
+import chinua from '@/public/images/authors/chinua.jpg';
 
 export const heroInfo = [
   {
@@ -37,5 +39,20 @@ export const categoriesData = [
     image: bestsellers,
     content: `Indulge in the crème de la crème of Nigerian literature with our bestsellers category. This curated collection features the most sought-after and highly acclaimed books that have captivated readers and garnered widespread acclaim. Discover literary gems that have garnered critical acclaim, won prestigious awards, and resonated with readers worldwide. Our bestsellers category encompasses both fiction and non-fiction titles, ensuring a diverse range of captivating reads. Stay up-to-date with the latest literary sensations, cultural phenomena, and literary milestones from Nigeria's literary landscape. Uncover literary masterpieces and bestselling authors that are making waves in the literary world.`,
     pageLink: '/bestsellers'
+  },
+];
+
+export const authorsData = [
+  {
+    name: 'Chimamanda Ngozi Adichie',
+    image: chimamanda,
+    content: `Chimamanda Ngozi Adichie is a Nigerian writer whose works include novels, short stories and nonfiction. She was described in The Times Literary Supplement as "the most prominent" of a "procession of critically acclaimed young anglophone authors [that] is succeeding in attracting a new generation of readers to African literature", particularly in her second home, the United States. Adichie has written the novels Purple Hibiscus (2003), Half of a Yellow Sun (2006), and Americanah (2013), the short story collection The Thing Around Your Neck (2009), and the book-length essay We Should All Be Feminists (2014). Her most recent books are Dear Ijeawele, or A Feminist Manifesto in Fifteen Suggestions (2017), Zikora (2020) and Notes on Grief (2021).`,
+    pageLink: '/authors'
+  },
+  {
+    name: 'Chinua Achebe',
+    image: chinua,
+    content: `Chinua Achebe, (16 November 1930 – 21 March 2013), was a Nigerian novelist, poet, and critic who is regarded as a central figure of modern African literature. His first novel and magnum opus, Things Fall Apart (1958), occupies a pivotal place in African literature and remains the most widely studied, translated, and read African novel. Along with Things Fall Apart, his No Longer at Ease (1960) and Arrow of God (1964) complete the "African Trilogy"; later novels include A Man of the People (1966) and Anthills of the Savannah (1987). In the West, Achebe is often referred to as the "father of African literature", although he vigorously rejected the characterization.`,
+    pageLink: '/authors'
   },
 ];

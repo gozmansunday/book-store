@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import './globals.css';
 import NavMenu from '@/components/navigation/NavMenu';
 import { ade, clash, hubot, mona, neue } from '@/lib/fontConfig';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Book Store',
@@ -25,10 +26,11 @@ const RootLayout = ({ children }: Props) => {
 
       <body className={`relative flex flex-col min-h-[100dvh] space-y-10 font-hubot  text-neutral-800 bg-neutral-100`}>
         <Header />
-        <div className="relative">
+        <div className="relative bg-neutral-100">
           {children}
           <NavMenu />
         </div>
+        <Footer />
       </body>
     </html>
   );

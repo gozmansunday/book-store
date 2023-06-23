@@ -4,7 +4,7 @@ import { heroInfo } from '@/public/data/data';
 
 const Hero = () => {
   return (
-    <section className="py-6">
+    <section className="py-0">
       <div className="max-w-[84rem] space-y-8 mx-auto px-2 xs:px-3 md:px-6 lg:px-3">
         <h1 className="flex justify-center items-center font-ade uppercase text-center max-w-3xl mx-auto text-2xl md:text-4xl">
           The best of Nigerian literature, all in one place.
@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {heroInfo.map((heroData) => (
               <section key={heroData.title} className="flex flex-col gap-3 md:flex-row md:gap-6">
-                <Image className="justify-self-start w-full object-contain rounded-lg md:h-64 md:w-auto" src={heroData.image} alt={heroData.title} />
+                <Image className="justify-self-start w-full object-contain rounded-md md:h-64 md:w-auto" src={heroData.image} alt={heroData.title} />
 
                 <div className="flex flex-col justify-between gap-4 md:gap-0">
                   <section className="font-semibold font-clash space-y-2 md:space-y-3">
@@ -31,7 +31,7 @@ const Hero = () => {
                   </section>
 
                   <div>
-                    <button className="flex items-center border border-neutral-400 bg-neutral-200 text-xs gap-2 py-2 px-6 rounded-lg shadow transition duration-200 hover:bg-neutral-300 sm:text-sm">
+                    <button className="border border-neutral-400 bg-neutral-200 text-xs gap-2 py-2 px-6 rounded-lg shadow transition duration-200 hover:bg-neutral-300 sm:text-sm">
                       View Book
                     </button>
                   </div>
