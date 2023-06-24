@@ -24,9 +24,9 @@ const RootLayout = ({ children }: Props) => {
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap" rel="stylesheet" />
       </head>
 
-      <body className={`relative flex flex-col min-h-[100dvh] space-y-10 font-hubot  text-neutral-800 bg-neutral-100`}>
+      <body className={`relative flex flex-col min-h-[100dvh] space-y-10 font-hubot  text-neutral-800 bg-neutral-100 z-0`}>
         <Header />
-        <div className="relative bg-neutral-100">
+        <div className="relative bg-neutral-100 z-20">
           {children}
           <NavMenu />
         </div>

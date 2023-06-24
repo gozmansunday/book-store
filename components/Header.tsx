@@ -6,7 +6,7 @@ import Hamburger from "@/components/navigation/Hamburger";
 
 const Header = () => {
   return (
-    <header className={`sticky top-0 font-neue z-20 shadow border border-b-neutral-300 backdrop-blur bg-neutral-200/50`}>
+    <header className={`sticky top-0 font-neue z-30 shadow border border-b-neutral-300 bg-neutral-200`}>
       <div className="max-w-[84rem] mx-auto flex items-center justify-between px-2 py-1 xs:px-3 md:px-6 md:py-2">
         {/* Logo */}
         <div className="flex items-center gap-1">
