@@ -1,45 +1,45 @@
 import Image from 'next/image';
-import { BsChevronRight } from 'react-icons/bs';
 
-import { heroInfo } from '@/public/assets/data/data';
+import { heroInfo } from '@/public/data/data';
 
 const Hero = () => {
   return (
-    <section className="py-10">
-      <div className="max-w-[96rem] mx-auto px-2 space-y-8">
-        <div className="flex justify-center items-center font-ade uppercase text-center max-w-6xl mx-auto text-3xl xs:text-4xl md:text-6xl lg:text-7x">
+    <section className="py-0">
+      <div className="max-w-[84rem] space-y-8 mx-auto px-2 xs:px-3 md:px-6 lg:px-3">
+        <h1 className="flex justify-center items-center font-ade uppercase text-center max-w-3xl mx-auto text-2xl md:text-4xl">
           The best of Nigerian literature, all in one place.
-        </div>
+        </h1>
 
         {/* New Releases */}
-        <div className='font-clash space-y-4 md:space-y-6 px-2'>
-          <h3 className='text-lg sm:text-xl'>New releases</h3>
+        <div className="bg-neutral-200/50 border border-neutral-300 backdrop-blur pt-6 pb-8 px-8 rounded-2xl shadow md:pt-8 md:pb-12 md:px-12 space-y-6">
+          <h3 className="text-base text-neutral-600 md:text-lg">New Releases</h3>
 
-          <div className='grid gap-14 lg:grid-cols-2 lg:gap-20'>
-
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {heroInfo.map((heroData) => (
-              <section key={heroData.title} className='flex flex-col gap-8 md:flex-row'>
-                <Image className='w-full mx-auto md:w-52 shadow-md' src={heroData.image} alt={heroData.title} />
+              <section key={heroData.title} className="flex flex-col gap-3 md:flex-row md:gap-6">
+                <Image className="justify-self-start w-full object-contain rounded-md md:h-64 md:w-auto" src={heroData.image} alt={heroData.title} />
 
-                <div className='space-y-3'>
-                  <section className=' font-semibold'>
-                    <h4 className='text-lg sm:text-xl'>{heroData.title}</h4>
-                    <h5 className='text-sm sm:text-base'>{heroData.author}</h5>
-                  </section>
-                  
-                  <section className='space-y-6 text-sm sm:text-base'>
-                    <p className='line-clamp-4 text-neutral-700 md:line-clamp-[8]'>
+                <div className="flex flex-col justify-between gap-4 md:gap-0">
+                  <section className="font-semibold font-clash space-y-2 md:space-y-3">
+                    <div>
+                      <h4 className="line-clamp-1 text-base sm:text-lg">{heroData.title}</h4>
+                      <h5 className="text-xs sm:text-sm">{heroData.author}</h5>
+                    </div>
+                    <p className="font-hubot font-normal text-neutral-600 line-clamp-4 text-xs sm:text-sm md:line-clamp-6">
                       {heroData.content}
                     </p>
-                    <button className='flex items-center gap-2 border border-neutral-900 py-2 px-8 transition duration-200 hover:border-primary hover:bg-primary hover:text-neutral-100'>
-                      View Book <BsChevronRight className='text-sm' />
-                    </button>
                   </section>
+
+                  <div>
+                    <button className="border border-neutral-400 bg-neutral-200 text-xs gap-2 py-2 px-6 rounded-lg shadow transition duration-200 hover:bg-neutral-300 sm:text-sm">
+                      View Book
+                    </button>
+                  </div>
                 </div>
               </section>
             ))}
-
           </div>
+          
         </div>
       </div>
     </section>

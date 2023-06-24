@@ -1,17 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Ade Display';
-  src:
-    url('../public/assets/fonts/Ade-Display.woff2') format('woff2 supports variations'),
-    url('../public/assets/fonts/Ade-Display.woff2') format('woff2-variations');
-}
-
-@font-face {
-  font-family: 'Neue Power';
-  src:
-    url('../public/assets/fonts/NeuePower.woff2') format('woff2 supports variations'),
-    url('../public/assets/fonts/NeuePower.woff2') format('woff2-variations');
-}
