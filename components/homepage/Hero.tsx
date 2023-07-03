@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="py-0">
       <div className="max-w-[84rem] space-y-8 mx-auto px-2 xs:px-3 md:px-6 lg:px-3">
         <h1 className="flex justify-center items-center font-ade uppercase text-center max-w-3xl mx-auto text-2xl md:text-4xl">
-          The best of Nigerian literature, all in one place.
+          The absolute best of Nigerian literature, all in one place.
         </h1>
 
         {/* New Releases */}
